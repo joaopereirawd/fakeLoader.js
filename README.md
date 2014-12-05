@@ -6,3 +6,6 @@
 <h1>1. Include in HTML Document</h1>
 <p style="margin:0px;">Include in the top of your &lt;body&gt; tag </p>
 <pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre>
+</br></br>
+<h1>2. Include styles</h1>
+
