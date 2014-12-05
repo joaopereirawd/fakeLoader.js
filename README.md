@@ -28,6 +28,13 @@
 </pre>
 <h1>4. Basic Initialize</h1>
 <p>Include in bottom of your  &lt;body&gt; tag</p>
+<pre>
+<code>
+    &lt;script type="text/javascript"&gt;
+        $(".fakeloader").fakeLoader();
+    &lt;/script&gt;
+</code>
+</pre>
 
 <h1>5. Options</h1>
 <pre>
