@@ -1,0 +1,58 @@
+#section-navigation {
+    position:relative;
+    margin-top:100px;
+}
+
+.btn-white {
+  font-family:'Lato';
+  font-weight:999;
+  min-width:100px;
+  background:transparent;
+  outline:none;
+  border:1px solid #000;
+  border-radius:22px;
+  padding:10px;
+  margin-right:10px;
+  margin-top:10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-goback {
+  font-family:'Lato';
+  font-weight:999;
+  min-width:100px;
+  background:#eee;
+  color:#000;
+  outline:none;
+  border:none;
+  border-radius:22px;
+  padding:10px;
+  margin-right:10px;
+  margin-bottom:20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-goback:hover {
+  opacity:.8;
+}
+
+
+.btn-white:hover { 
+  background:#000;
+  color:#fff;
+  outline:none;
+  border:1px solid #000;
+}
+
+.btn-active {
+  background:#000;
+  color:#fff;
+}
