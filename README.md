@@ -13,6 +13,8 @@
 <h1>3. Include Folowing Libraries</h1>
 <p>JQuery reference and the fakeLoader.js</p>
 <pre>
-<p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;</p><p>&lt;<span class="pl-ent">script</span> src="yourPath/fakeLoader.js"&gt;</p>
+<code>
+<p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;</p><p>&lt;script src="yourPath/fakeLoader.js"&gt;</p>
+</code>
 </pre>
 
