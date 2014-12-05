@@ -1,0 +1,163 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+	color:#000;
+	font-family:'Lato';
+	font-weight:900;
+}
+
+a {
+	color:#2ecc71;
+}
+a:hover {
+	color:#2ecc71;
+}
+/* ==========================================================================
+   Helper Classes
+   ==========================================================================*/
+small {
+	color:#909090;
+	font-family:'Lato';
+	font-weight:400;
+	font-size: 70%;
+	text-transform:uppercase;
+	letter-spacing:1.1px;
+}
+
+.mt {
+	margin-top:40px;
+}
+
+/* ==========================================================================
+   Styles
+   ==========================================================================*/
+#logo {
+	font-size: 56px;
+	letter-spacing: -3.8px;
+	font-weight: 700;
+}
+
+#header-socialbox {
+	color:#fff;
+	font-size:20px;
+}
+
+#header-socialbox a {
+	color:#fff;
+	margin-right:10px;
+}
+
+section#section-home {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	color: #fff;
+	background: #2ecc71;
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+	overflow: hidden;
+}
+
+section#section-about {
+	color:#000;
+}
+
+section#section-main {
+	position:relative;
+	padding:40px 0px 40px 0px;
+	width:100%;
+	float:left;
+	overflow:hidden;
+}
+
+code {
+	display: block;
+	padding: 15px 20px;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 1px 0px rgba(255, 255, 255, 0.15);
+	background:#eee;
+	overflow:auto;
+}
+
+code p {
+	margin:0px;
+	line-height: 21px;
+}
+
+/* ==========================================================================
+   Monokai styles
+   ========================================================================== */
+.mk-comment {
+	color:#B6B6B6;
+}
+
+.mk-attr {
+	color:#2ecc71;
+}
+
+.mk-link {
+	color:#FFF7A3;
+}
+
+.mk-tag {
+	
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+ button {
+ 	font-family:'Lato';
+ 	font-size:14px;
+ }
+
+.btn-white {
+	position: relative;
+	min-width: 228px;
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 10px;
+	border-radius: 40px;
+	font-size: 18px;
+	margin-right: 20px;
+}
+
+.btn-white:hover {
+	background:#fff;
+	color:#2ecc71;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#socialbox {
+	color:#909090;
+	font-size:20px;
+}   
+
+#socialbox a {
+	margin-left:15px;
+}   
+
+footer {
+	position:relative;
+	width:100%;
+	padding:25px 0px 25px 0px;
+	float:left;
+}
+
+footer a {
+	color:#909090;
+}
+
+
+
+
+
