@@ -4,5 +4,5 @@
 </p>
 <h3>Check out the <a href="http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html" target="_blank">Demo</a></h3>
 <h3>1. Include in HTML Document</h3>
-<p>Include in the top of your &lt;body&gt; tag </p>
+<p style="margin:0px;">Include in the top of your &lt;body&gt; tag </p>
 <pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre>
