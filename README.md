@@ -8,4 +8,6 @@
 <pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre>
 </br></br>
 <h1>2. Include styles</h1>
+<p>Inside &lt;head&gt; tag </p>
+<pre><p>&lt;link rel="stylesheet" href="yourPath/fakeLoader.css"&gt;</p></pre>
 
