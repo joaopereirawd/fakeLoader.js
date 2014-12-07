@@ -13,7 +13,7 @@
 <h1>3. Include Folowing Libraries</h1>
 <p>JQuery reference and the fakeLoader.js</p>
 <pre>
-<p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;</p><p>&lt;script src="yourPath/fakeLoader.js"&gt;</p>
+<p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;</p><p>&lt;script src="yourPath/fakeLoader.min.js"&gt;</p>
 </pre>
 
 <h1>4. Basic Initialize</h1>
