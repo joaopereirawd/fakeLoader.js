@@ -1,6 +1,6 @@
 <h1>What is fakeLoader.js</h1>
 <p>
-    fakeLoader.js is a lightweight jQuery plugin. <br>Allows to create a false loading effect, this prevents DOM display in the rendering process.
+fakeLoader.js is a lightweight jQuery plugin that helps you create an animated spinner with a fullscreen loading mask to simulate the page preloading effect.
 </p>
 <h3>Check out the <a href="http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html" target="_blank">Demo</a></h3>
 <h1>1. Include in HTML Document</h1>
