@@ -3,6 +3,10 @@
 fakeLoader.js is a lightweight jQuery plugin that helps you create an animated spinner with a fullscreen loading mask to simulate the page preloading effect.
 </p>
 <h3>Check out the <a href="http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html" target="_blank">Demo</a></h3>
+<h1>Bower?</h1>
+<p>Me too :) fakeLoader is available as a Bower package. Just run</p>
+<pre>bower install fakeloader</pre>
+
 <h1>1. Include in HTML Document</h1>
 <p style="margin:0px;">Include in the top of your &lt;body&gt; tag </p>
 <pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre>
