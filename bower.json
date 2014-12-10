@@ -5,5 +5,12 @@
     "fakeLoader.js"
   ],
   "license": "MIT",
-  "homepage": "http://joaopereirawd.github.io/fakeLoader.js"
+  "homepage": "http://joaopereirawd.github.io/fakeLoader.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
