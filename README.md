@@ -4,7 +4,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 </p>
 <h3>Check out the <a href="http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html" target="_blank">Demo</a></h3>
 <h1>Bower?</h1>
-<p>Me too :) fakeLoader is available as a Bower package. Just run</p>
+<p>Me too :) fakeLoader.js is available as a Bower package. Just run</p>
 <pre>bower install fakeloader</pre>
 
 <h1>1. Include in HTML Document</h1>
