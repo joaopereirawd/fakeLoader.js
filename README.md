@@ -25,7 +25,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 <pre>
 <code>
     &lt;script type="text/javascript"&gt;
-        $(".fakeloader").fakeLoader();
+        $("#fakeloader").fakeLoader();
     &lt;/script&gt;
 </code>
 </pre>
@@ -33,7 +33,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 <h1>5. Options</h1>
 <pre>
 <code><p>&lt;script type="text/javascript"&gt;</p>
-    $(".fakeloader").fakeLoader({
+    $("#fakeloader").fakeLoader({
     
             timeToHide:1200, //Time in milliseconds for fakeLoader disappear
             zIndex:999, // Default zIndex
