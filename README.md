@@ -42,10 +42,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
             bgColor:"#2ecc71", //Hex, RGB or RGBA colors
             imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
     });
-    &lt;/script&gt;<br><br>     
-</code>
-
-<code>
+    &lt;/script&gt;     
 
     <p>&lt;script type="text/javascript"&gt;</p>
     $("#fakeLoader").fakeLoader({
@@ -54,7 +51,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
             css: {
                 'background': 'url("assets/img/alexrebula-logo-transparent.png") center center no-repeat',
                 'background-size': 'auto 60%',
-                'display': 'none',
+                'display': 'none', // Perhaps this can be avoided
                 'width': '100%',
                 'height': '200px',
                 'min-width': '200px'
