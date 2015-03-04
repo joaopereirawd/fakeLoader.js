@@ -4,7 +4,7 @@
  *author:     João Pereira
  *website:    http://www.joaopereira.pt
  *Licensed MIT 
------------------------------------------------------------------------*/;
+-----------------------------------------------------------------------*/
 (function ($) {
 
     $.fn.fakeLoader = function(options) {
