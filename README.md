@@ -64,3 +64,5 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 </code>
 </pre>
 
+Check out the screencast that demonstrates the new 'brandLogo' option: <a href="https://www.screenr.com/06YN">here</a>.
+
