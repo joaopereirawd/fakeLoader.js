@@ -46,7 +46,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 
     <p>&lt;script type="text/javascript"&gt;</p>
     $("#fakeLoader").fakeLoader({
-        timeToHide: 400000,
+        timeToHide: 2000,
         brandLogo: {
             css: {
                 'background': 'url("assets/img/alexrebula-logo-transparent.png") center center no-repeat',
