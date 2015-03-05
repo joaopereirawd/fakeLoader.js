@@ -5,7 +5,10 @@
  *website:    http://www.joaopereira.pt
  *Licensed MIT 
 -----------------------------------------------------------------------*/
-(function ($) {
+// the semi-colon before the function invocation is a safety
+// net against concatenated scripts and/or other plugins
+// that are not closed properly.
+;(function ($) {
 
     $.fn.fakeLoader = function(options) {
 
