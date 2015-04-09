@@ -32,7 +32,8 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 
 <h1>5. Options</h1>
 <pre>
-<code><p>&lt;script type="text/javascript"&gt;</p>
+<code>
+    <p>&lt;script type="text/javascript"&gt;</p>
     $("#fakeloader").fakeLoader({
     
             timeToHide:1200, //Time in milliseconds for fakeLoader disappear
@@ -40,8 +41,27 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
             spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
             bgColor:"#2ecc71", //Hex, RGB or RGBA colors
             imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
-            
-     &lt;/script&gt;
+    });
+    &lt;/script&gt;     
+
+    <p>&lt;script type="text/javascript"&gt;</p>
+    $("#fakeLoader").fakeLoader({
+        timeToHide: 2000,
+        brandLogo: {
+            css: {
+                'background': 'url("assets/img/alexrebula-logo-transparent.png") center center no-repeat',
+                'background-size': 'auto 60%',
+                'display': 'none', // Perhaps this can be avoided
+                'width': '100%',
+                'height': '200px',
+                'min-width': '200px'
+            },
+            verticalOffsetFromCenter: 40
+        }
+    });
+    &lt;/script&gt;
 </code>
 </pre>
+
+<h3>Check out the screencast that demonstrates the new 'brandLogo' option: <a href="https://www.screenr.com/06YN">here</a>.</h3>
 
