@@ -20,7 +20,8 @@
             zIndex: '999',  // Default zIndex 
             bgColor: '#2ecc71', // Default background color
             spinner:'spinner7', // Default Spinner
-            imagePath:'' // Default Path custom image
+            imagePath:'', // Default Path custom image
+            callback: function () {} // Default callback for fadeOut
         }, options);
 
         //Customized Spinners
@@ -87,7 +88,7 @@
 
         //Time to hide fakeLoader
         setTimeout(function(){
-            $(el).fadeOut();
+            $(el).fadeOut(callback);
         }, settings.timeToHide);
 
         //Return Styles 

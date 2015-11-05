@@ -39,8 +39,8 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
             zIndex:999, // Default zIndex
             spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
             bgColor:"#2ecc71", //Hex, RGB or RGBA colors
-            imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
-            
+            imagePath:"yourPath/customizedImage.gif", //If you want can you insert your custom image
+            callback: function () {} // Do something after fakeLoader disappears
      &lt;/script&gt;
 </code>
 </pre>
