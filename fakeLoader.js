@@ -50,7 +50,6 @@
         //Each 
         el.each(function() {
             var a = settings.spinner;
-            //console.log(a)
                 switch (a) {
                     case 'spinner1':
                             el.html(spinner01);
@@ -85,10 +84,15 @@
                 centerLoader();
         });
 
-        //Time to hide fakeLoader
-        setTimeout(function(){
+        //brute start/stop or time to hide fakeLoader
+        if(options === 'start')
+            $(el).show();
+        else if(options === 'stop')
             $(el).fadeOut();
-        }, settings.timeToHide);
+        else
+            setTimeout(function(){
+                $(el).fadeOut();
+            }, settings.timeToHide);
 
         //Return Styles 
         return this.css({
