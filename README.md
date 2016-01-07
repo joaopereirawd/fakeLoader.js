@@ -9,8 +9,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 
 <h1>1. Include in HTML Document</h1>
 <p style="margin:0px;">Include in the top of your &lt;body&gt; tag </p>
-<pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre>
-</br></br>
+<pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre></br></br>
 <h1>2. Include Styles</h1>
 <p>Inside &lt;head&gt; tag </p>
 <pre><p>&lt;link rel="stylesheet" href="yourPath/fakeLoader.css"&gt;</p></pre>
@@ -19,17 +18,18 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 <pre>
 <p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&gt;</p><p>&lt;script src="yourPath/fakeLoader.min.js"&gt;</p>
 </pre>
-
 <h1>4. Basic Initialize</h1>
 <p>Include in bottom of your  &lt;body&gt; tag</p>
 <pre>
 <code>
     &lt;script type="text/javascript"&gt;
-        $("#fakeloader").fakeLoader();
+        $("#fakeloader").fakeLoader(); //default settings
+       
+        $("#fakeloader").fakeLoader('start'); //default settings but always visible
+        
+        $("#fakeloader").fakeLoader('stop'); //hide fakeLoader
     &lt;/script&gt;
-</code>
-</pre>
-
+</code></pre>
 <h1>5. Options</h1>
 <pre>
 <code><p>&lt;script type="text/javascript"&gt;</p>
@@ -41,7 +41,5 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
             bgColor:"#2ecc71", //Hex, RGB or RGBA colors
             imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
             
-     &lt;/script&gt;
-</code>
-</pre>
+    <p>&lt;/script&gt;</p></code></pre>
 
