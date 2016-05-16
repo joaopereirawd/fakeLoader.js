@@ -86,9 +86,11 @@
         });
 
         //Time to hide fakeLoader
-        setTimeout(function(){
-            $(el).fadeOut();
-        }, settings.timeToHide);
+        if (settings.timeToHide !== false) {
+            setTimeout(function(){
+                $(el).fadeOut();
+            }, settings.timeToHide);
+        }
 
         //Return Styles 
         return this.css({
