@@ -46,7 +46,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 </code>
 </pre>
 
-<h1>5. Block Mode</h1>
+<h1>6. Block Mode</h1>
 <p>You can show loader until something execute finished.</p>
 <pre>
 <code><p>&lt;script type="text/javascript"&gt;</p>
