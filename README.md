@@ -46,3 +46,31 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 </code>
 </pre>
 
+<h1>5. Block Mode</h1>
+<p>You can show loader until something execute finished.</p>
+<pre>
+<code><p>&lt;script type="text/javascript"&gt;</p>
+    // init fakeLoader
+    $("#fakeLoader").fakeLoader({
+            blockMode:true, //set fakeLoader use blockMode    
+            timeToHide:1200, //Time in milliseconds for fakeLoader check release status
+            zIndex:999, // Default zIndex
+            spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+            bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+            imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
+            
+    });
+    
+    // call again after 1.5s, and release it.
+    // @note: the real used time is  1.5s ~ (1.5s + settings.timeToHide) 
+    setTimeout(function () {
+        $("#fakeLoader").fakeLoader({
+                release:true
+        });
+    }, 1500);
+    
+     &lt;/script&gt;
+</code>
+</pre>
+
+
