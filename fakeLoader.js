@@ -6,8 +6,16 @@
  *Licensed MIT 
 -----------------------------------------------------------------------*/
 (function ($) {
- 
+
     $.fn.fakeLoader = function(options) {
+
+        // create fake loader only once
+        var bindLoader = $(this).data("fakeLoader:initial");
+        if(bindLoader) {
+            bindLoader.settings = $.extend(bindLoader.settings,options);
+            return;
+        }
+        $(this).data("fakeLoader:initial", this);
 
         //Defaults
         var settings = $.extend({
@@ -15,22 +23,28 @@
             pos:'fixed',// Default Position
             top:'0px',  // Default Top value
             left:'0px', // Default Left value
-            width:'100%', // Default width 
+            width:'100%', // Default width
             height:'100%', // Default Height
             zIndex: '999',  // Default zIndex 
             bgColor: '#2ecc71', // Default background color
             spinner:'spinner7', // Default Spinner
-            imagePath:'' // Default Path custom image
+            imagePath:'', // Default Path custom image
+            blockMode:false, // Set fakeLoader use blockMode,this will show fakePanel until release is true
+            release:false // If release is true, blockMode will disable
         }, options);
+
+        this.settings = settings;
+
 
         //Customized Spinners
         var spinner01 = '<div class="fl spinner1"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>';
         var spinner02 = '<div class="fl spinner2"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
         var spinner03 = '<div class="fl spinner3"><div class="dot1"></div><div class="dot2"></div></div>';
-        var spinner04 = '<div class="fl spinner4"></div>'; 
-        var spinner05 = '<div class="fl spinner5"><div class="cube1"></div><div class="cube2"></div></div>'; 
-        var spinner06 = '<div class="fl spinner6"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>'; 
-        var spinner07 = '<div class="fl spinner7"><div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>'; 
+        var spinner04 = '<div class="fl spinner4"></div>';
+        var spinner05 = '<div class="fl spinner5"><div class="cube1"></div><div class="cube2"></div></div>';
+        var spinner06 = '<div class="fl spinner6"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>';
+        var spinner07 = '<div class="fl spinner7"><div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>';
+
 
         //The target
         var el = $(this);
@@ -86,9 +100,18 @@
         });
 
         //Time to hide fakeLoader
-        setTimeout(function(){
-            $(el).fadeOut();
-        }, settings.timeToHide);
+        if (settings.blockMode == false) {
+            setTimeout(function(){
+                $(el).fadeOut();
+            }, settings.timeToHide);
+        } else {
+            setInterval(function(){
+                if(settings.release == true){
+                    $(el).fadeOut();
+                }
+            }, settings.timeToHide);
+        }
+
 
         //Return Styles 
         return this.css({
@@ -96,9 +119,9 @@
             'zIndex':settings.zIndex
         });
 
- 
+
     }; // End Fake Loader
- 
+
 
         //Center Spinner
         function centerLoader() {
