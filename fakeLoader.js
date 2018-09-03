@@ -100,29 +100,29 @@
     }; // End Fake Loader
  
 
-        //Center Spinner
-        function centerLoader() {
+    //Center Spinner
+    function centerLoader() {
 
-            var winW = $(window).width();
-            var winH = $(window).height();
+        var winW = $(window).width();
+        var winH = $(window).height();
 
-            var spinnerW = $('.fl').outerWidth();
-            var spinnerH = $('.fl').outerHeight();
+        var spinnerW = $('.fl').outerWidth();
+        var spinnerH = $('.fl').outerHeight();
 
-            $('.fl').css({
-                'position':'absolute',
-                'left':(winW/2)-(spinnerW/2),
-                'top':(winH/2)-(spinnerH/2)
-            });
-
-        }
-
-        $(window).load(function(){
-                centerLoader();
-              $(window).resize(function(){
-                centerLoader();
-              });
+        $('.fl').css({
+            'position':'absolute',
+            'left':(winW/2)-(spinnerW/2),
+            'top':(winH/2)-(spinnerH/2)
         });
+
+    }
+
+    $(window).on('load', function(){
+        centerLoader();
+        $(window).resize(function(){
+        centerLoader();
+        });
+    });
 
 
 }(jQuery));
