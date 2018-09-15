@@ -94,7 +94,7 @@
         
         //CallBack to hide fakeLoader
         if(settings.CallBackToHide){
-           if(settings.CallBackToHide()){
+           if(settings.CallBackToHide(el)){
               $(el).fadeOut();
            }
         }
