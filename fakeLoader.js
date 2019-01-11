@@ -86,10 +86,19 @@
         });
 
         //Time to hide fakeLoader
-        setTimeout(function(){
-            $(el).fadeOut();
-        }, settings.timeToHide);
-
+        if(settings.timeToHide){
+           setTimeout(function(){
+               $(el).fadeOut();
+           }, settings.timeToHide);
+         }
+        
+        //CallBack to hide fakeLoader
+        if(settings.CallBackToHide){
+           if(settings.CallBackToHide(el)){
+              $(el).fadeOut();
+           }
+        }
+     
         //Return Styles 
         return this.css({
             'backgroundColor':settings.bgColor,
