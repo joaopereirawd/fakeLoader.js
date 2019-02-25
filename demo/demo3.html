@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/demo.css">
-        <link rel="stylesheet" href="css/fakeLoader.css">
+        <link rel="stylesheet" href="css/fakeLoader.min.css">
     </head>
     <body>
     <!--[if lt IE 7]>
@@ -33,20 +33,20 @@
                 <a href="demo5.html"><button class="btn-default btn-white">Spinner5</button></a>
                 <a href="demo6.html"><button class="btn-default btn-white">Spinner6</button></a>
                 <a href="demo7.html"><button class="btn-default btn-white">Spinner7</button></a>
-                <a href="demo8.html"><button class="btn-default btn-white">Costum Image</button></a>
             </div>
         </section>
 
         <div class="container text-center">
-            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK3E&placement=joaopereirawdgithubio" id="_carbonads_js"></script>
+            <script async type="text/javascript"
+                src="//cdn.carbonads.com/carbon.js?serve=CK7DLK3E&placement=joaopereirawdgithubio" id="_carbonads_js"></script>
             <h1>DOM was loaded</h1>
         </div>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/fakeLoader.min.js"></script>
         <script>
             $(document).ready(function(){
-                $(".fakeloader").fakeLoader({
+                $.fakeLoader({
                     timeToHide:1200,
                     bgColor:"#3498db",
                     spinner:"spinner4"
@@ -54,6 +54,8 @@
             });
         </script>
 
+
+        <div class="fakeLoader"></div>
     </body>
 </html>
 

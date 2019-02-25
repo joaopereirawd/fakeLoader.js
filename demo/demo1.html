@@ -11,13 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/demo.css">
-        <link rel="stylesheet" href="css/fakeLoader.css">
+        <link rel="stylesheet" href="css/fakeLoader.min.css">
     </head>
     <body>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-        <div class="fakeloader"></div>
 
         <section id="section-navigation">
             <div class="container text-center">
@@ -31,22 +27,22 @@
                 <a href="demo5.html"><button class="btn-default btn-white">Spinner5</button></a>
                 <a href="demo6.html"><button class="btn-default btn-white">Spinner6</button></a>
                 <a href="demo7.html"><button class="btn-default btn-white">Spinner7</button></a>
-                <a href="demo8.html"><button class="btn-default btn-white">Costum Image</button></a>
             </div>
         </section>
 
         <div class="container text-center">
-            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK3E&placement=joaopereirawdgithubio" id="_carbonads_js"></script>
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK3E&placement=joaopereirawdgithubio" id="_carbonads_js"></script>
             <h1>DOM was loaded</h1>
         </div>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/fakeLoader.min.js"></script>
+        <div class="fakeLoader"></div>
+
         <script>
-            $(document).ready(function(){
-                $(".fakeloader").fakeLoader({
-                    timeToHide:1200,
-                    bgColor:"#2ecc71",
+            $(document).ready(function () {
+                $.fakeLoader({
+                    bgColor: '#2ecc71',
                     spinner:"spinner1"
                 });
             });

@@ -41,13 +41,12 @@
             <div class="row">
 
                 <div class="col-lg-10 col-lg-offset-1">
-                    <div id="logo">fakeLoader.js</div>
+                    <div id="logo">fakeLoader.js v2.0.0</div>
                     <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK3E&placement=joaopereirawdgithubio" id="_carbonads_js"></script>
-
                 </div>
 
                 <div class="col-lg-10 col-lg-offset-1 mt">
-                    <a href="http://joaopereirawd.github.io/fakeLoader.js/js/fakeLoader.min.js" target="_black"><button class="btn btn-white">Download Compressed</button></a>
+                    <a href="http://joaopereirawd.github.io/fakeLoader.js/dist/fakeLoader.min.js" target="_black"><button class="btn btn-white">Download Compressed</button></a>
                     <a href="http://joaopereirawd.github.io/fakeLoader.js/js/fakeLoader.js" target="_black"><button class="btn btn-white">Download Uncompressed</button></a>
                 </div>
 
@@ -75,50 +74,49 @@
                     </div>
 
                     <div class="col-lg-10 col-lg-offset-1">
-                          <h3>Bower?</h3>
-                          <p>Me too :) fakeLoader is available as a Bower package. Just run</p>
-                          <code><p>bower install fakeloader</p></code>
+                          <h3>Importing</h3>
+                          <p></p>
+                          <code><p>yarn add jquery-fakeloader</br>or</br>npm i jquery-fakeloader</p></code>
                     </div>
                     
                     <div class="col-lg-10 col-lg-offset-1">
                           <h3>1. Include in HTML Document</h3>
-                          <p>Include in the top of your &lt;body&gt; tag </p>
-                          <code><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></code>
+                          <code><p>&lt;div class="fakeLoader"&gt;&lt;/div&gt;</p></code>
                     </div>
 
                     <div class="col-lg-10 col-lg-offset-1 mt">
                           <h3>2. Include styles</h3>
-                          <p>Inside &lt;head&gt; tag </p>
-                          <code><p>&lt;link rel="stylesheet" href="yourPath/fakeLoader.css"&gt;</p></code>
+                          <code><p>&lt;link rel="stylesheet" href="../node_modules/dist/fakeLoader.min.css"&gt;</p></code>
                     </div>
 
                     <div class="col-lg-10 col-lg-offset-1 mt">
-                          <h3>3. Include Folowing Libraries</h3>
-                          <p>JQuery reference and the fakeLoader.js</p>
-                          <code><p>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;</p><p>&lt;script src="yourPath/fakeLoader.min.js"&gt;</p></code>
+                          <h3>3. Include JQuery dependency</h3>
+                          <code><p>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;</p></code>
                     </div>
 
                     <div class="col-lg-10 col-lg-offset-1 mt">
-                          <h3>4. Basic Initialize</h3>
-                          <p>Include in bottom of your &lt;body&gt; tag </p>
+                      <h3>4. Include fakeLoader dependency</h3>
+                      <code><p>&lt;script src="../node_modules/dist/fakeLoader.min.js"&gt;</p></code>
+                    </div>
+
+                    <div class="col-lg-10 col-lg-offset-1 mt">
+                          <h3>5. Basic Initialize</h3>
                           <code>
                             <p>&lt;script type="text/javascript"&gt;</p>
-                            <p style="margin-left:20px;">$("#fakeloader").fakeLoader();</p>
+                            <p style="margin-left:20px;">$.fakeLoader();</p>
                             <p>&lt;/script&gt;</p>
                           </code>
                           
                     </div>
 
                     <div class="col-lg-10 col-lg-offset-1 mt">
-                          <h3>5. Options</h3>
+                          <h3>6. Options</h3>
                           <p></p>
                           <code><p>&lt;script type="text/javascript"&gt;</p>
-                                <p style="margin-left:20px;">$("#fakeloader").fakeLoader({</p>
+                                <p style="margin-left:20px;">$.fakeLoader({</p>
                                 <p style="margin-left:40px;">timeToHide:1200, <span class="mk-comment">//Time in milliseconds for fakeLoader disappear</span></p>
-                                <p style="margin-left:40px;">zIndex:"999",<span class="mk-comment">//Default zIndex</span></p>
                                 <p style="margin-left:40px;">spinner:"spinner1",<span class="mk-comment">//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' </span></p>
-                                <p style="margin-left:40px;">bgColor:"#2ecc71", <span class="mk-comment">//Hex, RGB or RGBA colors</span></p>
-                                <p style="margin-left:40px;">imagePath:"yourPath/customizedImage.gif" <span class="mk-comment">//If you want can you insert your custom image</span></p>
+                                <p style="margin-left:40px;">bgColor:"#2ecc71" <span class="mk-comment">//Hex, RGB or RGBA colors</span></p>
                                 <p style="margin-left:20px;">});</p>
                                 <p>&lt;/script&gt;</p>
                           </code>
