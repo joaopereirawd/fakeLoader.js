@@ -2,7 +2,7 @@
 
 fakeLoader.js is a lightweight jQuery plugin that helps you create an animated spinner with a fullscreen loading mask to simulate the page preloading effect.
 
-Check out the [demo](http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html)
+Check out the [demo](http://joaopereirawd.github.io/fakeLoader.js)
 
 ### 1. Importing 
 ```js 
