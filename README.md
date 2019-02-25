@@ -4,7 +4,7 @@ fakeLoader.js is a lightweight jQuery plugin that helps you create an animated s
 
 Check out the [demo](http://joaopereirawd.github.io/fakeLoader.js)
 
-### 1. Importing 
+### 1. Installing 
 ```js 
 yarn add jq-fakeloader
 or
