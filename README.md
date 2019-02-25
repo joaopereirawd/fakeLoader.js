@@ -16,17 +16,17 @@ npm i jq-fakeloader
 <link rel="stylesheet" href="../node_modules/dist/fakeLoader.min.css">
 ```
 
-### 3. Include `jQuery` dependency 
-```
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-```
-
-### 4. Include `fakeLoader` placeholder in the HTML Document 
+### 3. Include `fakeLoader` placeholder in the HTML Document 
 ```
 <div class="fakeLoader"></div>
 ```
 
-### 5. Include `fakeLoader.min.js` placeholder in the HTML Document 
+### 4. Include `jQuery` dependency 
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+```
+
+### 5. Include `fakeLoader.min.js`
 ```js
 <script src="../node_modules/dist/fakeLoader.min.js">
 ```
@@ -38,7 +38,7 @@ npm i jq-fakeloader
 </script>
 ```
 
-### 7.Options
+### 7. Options
 
 ```js
 <script>
