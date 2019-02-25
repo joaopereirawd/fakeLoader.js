@@ -1,51 +1,52 @@
-<h1>What is fakeLoader.js</h1>
-<p>
+# What is fakeLoader.js
+
 fakeLoader.js is a lightweight jQuery plugin that helps you create an animated spinner with a fullscreen loading mask to simulate the page preloading effect.
-</p>
-<h3>Check out the <a href="http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html" target="_blank">Demo</a></h3>
-<h1>Bower?</h1>
-<p>Me too :) fakeLoader.js is available as a Bower package. Just run</p>
-<pre>bower install fakeloader</pre>
 
-<h1>1. Include in HTML Document</h1>
-<p style="margin:0px;">Include in the top of your &lt;body&gt; tag </p>
-<pre><p>&lt;div id="fakeLoader"&gt;&lt;/div&gt;</p></pre>
-</br></br>
-<h1>2. Include Styles</h1>
-<p>Inside &lt;head&gt; tag </p>
+Check out the [demo](http://joaopereirawd.github.io/fakeLoader.js/demo/demo1.html)
 
+### 1. Importing 
+```js 
+yarn add jq-fakeloader
+or
+npm i jq-fakeloader
+```
+
+### 2. Include CSS
 ```css
-<link rel="stylesheet" href="yourPath/fakeLoader.css"/>
+<link rel="stylesheet" href="../node_modules/dist/fakeLoader.min.css">
 ```
 
-<h1>3. Include Folowing Libraries</h1>
-<p>JQuery reference and the fakeLoader.js</p>
+### 3. Include `jQuery` dependency 
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+```
 
+### 4. Include `fakeLoader` placeholder in the HTML Document 
+```
+<div class="fakeLoader"></div>
+```
+
+### 5. Include `fakeLoader.min.js` placeholder in the HTML Document 
 ```js
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"/>
-<script src="yourPath/fakeLoader.min.js"/>
+<script src="../node_modules/dist/fakeLoader.min.js">
 ```
 
-<h1>4. Basic Initialize</h1>
-<p>Include in bottom of your  &lt;body&gt; tag</p>
-
+### 6. Basic Initialize
 ```js
 <script>
-   $("#fakeLoader").fakeLoader();
+   $.fakeLoader();
 </script>
 ```
 
-<h1>5. Options</h1>
+### 7.Options
 
 ```js
 <script>
-    $("#fakeLoader").fakeLoader(
+    $.fakeLoader(
         {
-          timeToHide:1200, //Time in milliseconds for fakeLoader disappear
-          zIndex:999, // Default zIndex
-          spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-          bgColor:"#2ecc71", //Hex, RGB or RGBA colors
-          imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image    
+          timeToHide:1200,    //Time in milliseconds for fakeLoader disappear
+          spinner:"spinner1", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+          bgColor:"#2ecc71",  //Hex, RGB or RGBA colors
         }
     );
 </script>
